@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dadaynamo/Sudoku_daddyProject/issues"
   },
-  "homepage": "https://github.com/dadaynamo/Sudoku_daddyProject#readme"
+  "homepage": "https://github.com/dadaynamo/Sudoku_daddyProject#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.1"
+  }
 }
