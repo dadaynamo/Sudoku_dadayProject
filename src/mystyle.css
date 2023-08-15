@@ -1,0 +1,68 @@
+/* stili custom per canvas sudoku */
+/* --------------------------------------- */
+.sudoku-row {
+    width: 18rem;
+    height: 2rem;
+    text-align: center;
+    /*border: 2px solid grey;*/
+    font-size: 1rem;
+
+  }
+
+/*cella interna sudoku*/
+.sudoku-cell-intern {
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    border: 2px solid grey;
+}
+
+
+
+/* annullamento di specifici bordi */
+.bl-canvas{
+    border-left: 0px !important;
+}
+.br-canvas{
+    border-right: 0px !important;
+}
+.bt-canvas{
+    border-top: 0px !important;
+}
+.bb-canvas{
+    border-bottom: 0px !important;
+}
+
+/*marker specifici bordi*/
+.ml-canvas{
+    border-left: 1px solid rgb(13, 110, 253) !important;}
+.mr-canvas{
+    border-right: 1px solid rgb(13, 110, 253) !important;
+}
+.mt-canvas{
+    border-top: 1px solid rgb(13, 110, 253) !important;
+}
+.mb-canvas{
+    border-bottom: 1px solid rgb(13, 110, 253) !important;
+}
+
+/* annullamento padding laterali */
+.plr-canvas{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+/* canvas generale del sudoku */
+.canvas{
+    width: 18rem;
+    height: 18rem;
+    border-radius: 15px;
+    border: 2px solid grey;
+    box-sizing: content-box;
+}
+
+/* --------------------------------------- */
+
+.border_rapid{
+    border: 2px solid red ;
+}
