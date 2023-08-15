@@ -1,0 +1,19 @@
+{
+  "name": "sudoku_daddyproject",
+  "version": "1.0.0",
+  "description": "Sudoku with js vanilla, bootstrap, html5 and saved on repository github",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dadaynamo/Sudoku_daddyProject.git"
+  },
+  "author": "Mattia Daday",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dadaynamo/Sudoku_daddyProject/issues"
+  },
+  "homepage": "https://github.com/dadaynamo/Sudoku_daddyProject#readme"
+}
