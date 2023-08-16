@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="src/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/img/favicon-32x32.png">
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/mystyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -19,283 +22,283 @@
     <!-- Game canvas -->
     <div class="container-full d-flex justify-content-center  align-item-center">
         <div class="container  d-flex justify-content-center align-item-center row" id="game_zone">
-            <div class="canvas plr-canvas">
+            <div class="canvas plr-canvas" id="canvas">
 
                 <!-- riga 1 -->
                 <div class="sudoku-row d-flex flex-row">
-                    <div class="sudoku-cell-intern bl-canvas  bt-canvas">
+                    <div class="sudoku-cell-intern bl-canvas  bt-canvas" id="00">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern bl-canvas  bt-canvas">
+                    <div class="sudoku-cell-intern bl-canvas  bt-canvas"  id="01">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bt-canvas mr-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bt-canvas mr-canvas"  id="02">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas ml-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas ml-canvas"  id="03">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas"  id="04">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas mr-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas mr-canvas"  id="05">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas ml-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas ml-canvas"  id="06">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas"  id="07">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern br-canvas bl-canvas bt-canvas">
+                    <div class="sudoku-cell-intern br-canvas bl-canvas bt-canvas"  id="08">
                         <span>1</span>
                     </div>
                 </div>
 
                 <!-- riga 2 -->
                 <div class="sudoku-row d-flex flex-row">
-                    <div class="sudoku-cell-intern bl-canvas  bt-canvas">
+                    <div class="sudoku-cell-intern bl-canvas  bt-canvas" id="10">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern bl-canvas  bt-canvas">
+                    <div class="sudoku-cell-intern bl-canvas  bt-canvas"  id="11">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bt-canvas mr-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bt-canvas mr-canvas"  id="12">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas ml-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas ml-canvas"  id="13">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas"  id="14">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas mr-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas mr-canvas"  id="15">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas ml-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas ml-canvas"  id="16">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas"  id="17">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern br-canvas bl-canvas bt-canvas">
+                    <div class="sudoku-cell-intern br-canvas bl-canvas bt-canvas"  id="18">
                         <span>1</span>
                     </div>
                 </div>
 
                 <!-- riga 3 -->
                 <div class="sudoku-row d-flex flex-row">
-                    <div class="sudoku-cell-intern bl-canvas bb-canvas bt-canvas mb-canvas">
+                    <div class="sudoku-cell-intern bl-canvas bb-canvas bt-canvas mb-canvas" id="20">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern bl-canvas bb-canvas bt-canvas mb-canvas">
+                    <div class="sudoku-cell-intern bl-canvas bb-canvas bt-canvas mb-canvas" id="21">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas bt-canvas mr-canvas mb-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas bt-canvas mr-canvas mb-canvas" id="22">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas ml-canvas mb-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas ml-canvas mb-canvas" id="23">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mb-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mb-canvas" id="24">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mr-canvas mb-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mr-canvas mb-canvas" id="25">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas ml-canvas mb-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas ml-canvas mb-canvas" id="26">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mb-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mb-canvas" id="27">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern br-canvas bl-canvas bb-canvas bt-canvas mb-canvas">
+                    <div class="sudoku-cell-intern br-canvas bl-canvas bb-canvas bt-canvas mb-canvas" id="28">
                         <span>1</span>
                     </div>
                 </div>
 
                 <!-- riga 4 -->
                 <div class="sudoku-row d-flex flex-row">
-                    <div class="sudoku-cell-intern bl-canvas bb-canvas bt-canvas mt-canvas">
+                    <div class="sudoku-cell-intern bl-canvas bb-canvas bt-canvas mt-canvas" id="30">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern bl-canvas bb-canvas bt-canvas mt-canvas">
+                    <div class="sudoku-cell-intern bl-canvas bb-canvas bt-canvas mt-canvas" id="31">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas bt-canvas mr-canvas mt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas bt-canvas mr-canvas mt-canvas" id="32">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas ml-canvas mt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas ml-canvas mt-canvas" id="33">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mt-canvas" id="34">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mr-canvas mt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mr-canvas mt-canvas" id="35">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas ml-canvas mt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas ml-canvas mt-canvas" id="36">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mt-canvas" id="37">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern br-canvas bl-canvas bb-canvas bt-canvas mt-canvas">
+                    <div class="sudoku-cell-intern br-canvas bl-canvas bb-canvas bt-canvas mt-canvas" id="38">
                         <span>1</span>
                     </div>
                 </div>
 
                 <!-- riga 5 -->
                 <div class="sudoku-row d-flex flex-row">
-                    <div class="sudoku-cell-intern bl-canvas">
+                    <div class="sudoku-cell-intern bl-canvas" id="40">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern bl-canvas">
+                    <div class="sudoku-cell-intern bl-canvas" id="41">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas mr-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas mr-canvas" id="42">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas ml-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas ml-canvas" id="43">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas" id="44">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas mr-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas mr-canvas" id="45">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas ml-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas ml-canvas" id="46">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas" id="47">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern br-canvas bl-canvas">
+                    <div class="sudoku-cell-intern br-canvas bl-canvas" id="48">
                         <span>1</span>
                     </div>
                 </div>
 
                 <!-- riga 6 -->
                 <div class="sudoku-row d-flex flex-row">
-                    <div class="sudoku-cell-intern bl-canvas bb-canvas bt-canvas mb-canvas">
+                    <div class="sudoku-cell-intern bl-canvas bb-canvas bt-canvas mb-canvas" id="50">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern bl-canvas bb-canvas bt-canvas mb-canvas">
+                    <div class="sudoku-cell-intern bl-canvas bb-canvas bt-canvas mb-canvas" id="51">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas bt-canvas mr-canvas mb-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas bt-canvas mr-canvas mb-canvas" id="52">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas ml-canvas mb-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas ml-canvas mb-canvas" id="53">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mb-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mb-canvas" id="54">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mr-canvas mb-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mr-canvas mb-canvas" id="55">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas ml-canvas mb-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas ml-canvas mb-canvas" id="56">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mb-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mb-canvas" id="57">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern br-canvas bl-canvas bb-canvas bt-canvas mb-canvas">
+                    <div class="sudoku-cell-intern br-canvas bl-canvas bb-canvas bt-canvas mb-canvas" id="58">
                         <span>1</span>
                     </div>
                 </div>
 
                 <!-- riga 7 -->
                 <div class="sudoku-row d-flex flex-row">
-                    <div class="sudoku-cell-intern bl-canvas bt-canvas mt-canvas">
+                    <div class="sudoku-cell-intern bl-canvas bt-canvas mt-canvas" id="60">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern bl-canvas bt-canvas mt-canvas">
+                    <div class="sudoku-cell-intern bl-canvas bt-canvas mt-canvas" id="61">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bt-canvas mr-canvas mt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bt-canvas mr-canvas mt-canvas" id="62">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas ml-canvas mt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas ml-canvas mt-canvas" id="63">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas mt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas mt-canvas" id="64">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas mr-canvas mt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas mr-canvas mt-canvas" id="65">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas ml-canvas mt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas ml-canvas mt-canvas" id="66">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas mt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas mt-canvas" id="67">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern br-canvas bl-canvas bt-canvas mt-canvas">
+                    <div class="sudoku-cell-intern br-canvas bl-canvas bt-canvas mt-canvas" id="68">
                         <span>1</span>
                     </div>
                 </div>
 
                 <!-- riga 8 -->
                 <div class="sudoku-row d-flex flex-row">
-                    <div class="sudoku-cell-intern bl-canvas  bt-canvas">
+                    <div class="sudoku-cell-intern bl-canvas  bt-canvas" id="70">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern bl-canvas  bt-canvas">
+                    <div class="sudoku-cell-intern bl-canvas  bt-canvas" id="71">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bt-canvas mr-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bt-canvas mr-canvas" id="72">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas ml-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas ml-canvas" id="73">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas" id="74">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas mr-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas mr-canvas" id="75">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas ml-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas ml-canvas" id="76">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas  bt-canvas" id="77">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern br-canvas bl-canvas bt-canvas">
+                    <div class="sudoku-cell-intern br-canvas bl-canvas bt-canvas" id="78">
                         <span>1</span>
                     </div>
                 </div>
 
                 <!-- riga 9 -->
                 <div class="sudoku-row d-flex flex-row">
-                    <div class="sudoku-cell-intern bl-canvas bb-canvas bt-canvas">
+                    <div class="sudoku-cell-intern bl-canvas bb-canvas bt-canvas" id="80">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern bl-canvas bb-canvas bt-canvas">
+                    <div class="sudoku-cell-intern bl-canvas bb-canvas bt-canvas" id="81">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas bt-canvas mr-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas bt-canvas mr-canvas" id="82">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas ml-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas ml-canvas" id="83">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas" id="84">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mr-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas mr-canvas" id="85">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas ml-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas ml-canvas" id="86">
                         <span>1</span>
                     </div>
-                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas">
+                    <div class="sudoku-cell-intern  bl-canvas bb-canvas  bt-canvas" id="87">
                         <span>2</span>
                     </div>
-                    <div class="sudoku-cell-intern br-canvas bl-canvas bb-canvas bt-canvas">
+                    <div class="sudoku-cell-intern br-canvas bl-canvas bb-canvas bt-canvas" id="88">
                         <span>1</span>
                     </div>
                 </div>
@@ -304,9 +307,10 @@
             </div>
             <!-- pulsanti vari -->
             <div class="container-fluid d-flex justify-content-center my-3">
-                <button class="btn btn-primary mx-2">Play</button>
-                <button class="btn btn-primary mx-2">Reset</button>
-                <button class="btn btn-primary mx-2">Pause</button>
+                <button class="btn btn-primary mx-2" id="btnPlay">Play</button>
+                <button class="btn btn-primary mx-2" id="btnReset">Reset</button>
+                <button class="btn btn-primary mx-2" id="btnPause">Pause</button>
+                <button class="btn btn-danger mx-2" id="btnConsole">Console</button>
             </div>
 
 
@@ -325,9 +329,9 @@
                 <thead>
                     <tr>
                       <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
+                      <th scope="col">Nome</th>
+                      <th scope="col">Cognome</th>
+                      <th scope="col">Tempo</th>
                     </tr>
                   </thead>
                   <tbody class="table-group-divider">
@@ -337,30 +341,7 @@
                       <td>Otto</td>
                       <td>@mdo</td>
                     </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
+
                   </tbody>
               </table>
           </div>
