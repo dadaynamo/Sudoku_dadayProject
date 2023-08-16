@@ -1,7 +1,7 @@
 class Quadrante{
     MAX_RIGHE;
     MAX_COLONNE;
-    nQuadranti;
+    nSettore;
     schema;
     inGame;
     inPause;
@@ -59,7 +59,6 @@ class Quadrante{
         console.log("Eliminato ");
         console.log(this.schema);
     }
-
     svuotaSchema(){
         //svuoto tutta la variabile schema
         this.schema = [];
@@ -69,6 +68,7 @@ class Quadrante{
         //carico tutto uno schema nella variabile schema
         this.schema = schema;
         console.log(this.schema);
+        this.renderHTML();
     }
     gestCells(){
         //attribuisco a ogni cella html la possibilità di essere modificata
@@ -84,6 +84,7 @@ class Quadrante{
                 var str = `${i}`+`${j}`;
                 const cell = document.getElementById(str);
                 const span = cell.querySelectorAll("span");
+                const self = this; // Conserva il riferimento all'oggetto della classe
 
                 span[0].addEventListener("dblclick",(e)=>{
                     span[0].contentEditable = true;
@@ -102,6 +103,7 @@ class Quadrante{
                     console.log(this.schematest);
                     //carico valore nuovo in schema
                     schematest[e.target.dataset.i][e.target.dataset.j] = textModified;
+                    self.setInSchema(e.target.dataset.i,e.target.dataset.j,textModified);
                     console.log("schema testino"+schematest);
                 });
             }
@@ -147,6 +149,56 @@ class Quadrante{
         }
         
     }
+
+    //meccaniche di gioco
+    getNSettore(riga,colonna){
+        if(riga>=0 && riga<=2 && colonna>=0 && colonna<=2){ return 0;}
+        else if(riga>=0 && riga<=2 && colonna>=3 && colonna<=5){ return 1;}
+        else if(riga>=0 && riga<=2 && colonna>=6 && colonna<=8){ return 2;}
+        else if(riga>=3 && riga<=5 && colonna>=0 && colonna<=2){ return 3;}
+        else if(riga>=3 && riga<=5 && colonna>=3 && colonna<=5){ return 4;}
+        else if(riga>=3 && riga<=5 && colonna>=6 && colonna<=8){ return 5;}
+        else if(riga>=6 && riga<=8 && colonna>=0 && colonna<=2){ return 6;}
+        else if(riga>=6 && riga<=8 && colonna>=3 && colonna<=5){ return 7;}
+        else if(riga>=6 && riga<=8 && colonna>=6 && colonna<=8){ return 8;}
+    }
+    checkRiga(riga,colonna){
+        for(var i=0; i<this.MAX_COLONNE; i++){
+            if(this.schema[riga][colonna] == this.quadrante[riga][i] && i != colonna)
+                return true;
+        }
+        return false;
+    }
+    checkColonna(riga,colonna){
+        for(var i=0 ; i<this.MAX_RIGHE;i++){
+            if(this.schema[riga][colonna] == this.quadrante[i][colonna] && i != riga)
+                return true;
+        }
+        return false;
+    }
+    checkSettore(riga,colonna){
+        var settore = this.getNSettore(riga,colonna);
+        for(var i=0; i<this.MAX_COLONNE; i++){
+            for(var j=0; j<this.MAX_COLONNE; j++){
+                if(this.schema[riga][colonna] == this.schema[i][j] && riga != i && colonna != j && settore != this.getNSettore(i,j)){
+                    return true;
+                }
+            }
+            
+        }
+        return false;
+    }
+
+    checkNumber(riga,colonna){
+        if(this.checkColonna || this.checkNumber || this.checkSettore){
+            console.log("Numero ok");
+        }else{
+            console.log("ERRORE!");
+        }
+    }
+
+
+
 }
 
 /*gen quadrante nuovo */
