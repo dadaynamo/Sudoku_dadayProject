@@ -1,4 +1,4 @@
-# Sudoku_daddyProject
+# Sudoku_dadayProject
 ## Descrizione
 Applicazione web di un sudoku completamente creato con html5 bootstrap v5.2.1 e js vanilla.
 Sito web in costante crescita con aggiunta di piccole funzionalità.
