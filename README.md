@@ -9,10 +9,6 @@ Sito web in costante crescita con aggiunta di piccole funzionalità.
 - Scaricare in zip e posizionare il tutto in una cartella a noi comoda.
 - Controllare che vi sia nella cartella corrente per sicurezza il file package.json
 - Aprire una shell in modo che punti all'interno cartella del progetto e seguire i comandi
-
-```  
-$ npm init
-```
 ```  
 $ npm install
 ```
