@@ -119,10 +119,10 @@ class Quadrante{
                 const span = cell.querySelectorAll("span");
                 const self = this; // Conserva il riferimento all'oggetto della classe
 
-                span[0].addEventListener("dblclick",(e)=>{
+                span[0].addEventListener("click",(e)=>{
                     span[0].contentEditable = true;
                 });
-
+                
 
                 // Imposta gli attributi personalizzati dataset
                 span[0].dataset.i = i;
@@ -246,7 +246,7 @@ class Quadrante{
         
     }
     checkNumber(riga,colonna){
-        if(this.checkRiga(riga,colonna) == true || this.checkColonna(riga,colonna) == true || this.checkSettore(riga,colonna) == true){
+        if(this.checkRiga(riga,colonna) == true || this.checkColonna(riga,colonna) == true || this.checkSettore(riga,colonna) == true || this.getInSchema(riga,colonna)<1 || this.getInSchema(riga,colonna)>9){
             this.schema[riga][colonna] = "";
             var str = `${riga}`+`${colonna}`;
             console.log(str);
